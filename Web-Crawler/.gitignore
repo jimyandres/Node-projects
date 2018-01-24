@@ -1,4 +1,8 @@
 ### Node ###
+
+# Saved data using the download.js script
+f_*/
+
 # Logs
 logs
 *.log
