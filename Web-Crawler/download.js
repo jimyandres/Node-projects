@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const uuidv1 = require('uuid/v1');
 
-const downloadPage = (url = 'for generating random timestamped values') => {
+const downloadPage = (url = 'https://www.npmjs.com/') => {
   const fetchPage = (urlF, callback) => {
     http.get(urlF, (response) => {
       let buff = '';
