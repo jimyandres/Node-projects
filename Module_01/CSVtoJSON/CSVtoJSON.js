@@ -5,15 +5,14 @@ const csv = require('csvtojson');
 const csv2json = (file = 'example/customer-data.csv') => {
 
   const convert = (csv_string, callback) => {
-    let buff = '';
-    csv({toArrayString:true})
+    let buff = [];
+    csv()
       .fromString(csv_string)
-      .on('data', (data) => {
-        buff += data.toString('utf8') + '';
+      .on('json', (jsonObj) => {
+        buff.push(jsonObj);
       })
       .on('end', () => {
-        jsonParsed = JSON.parse(buff);
-        jsonPretty = JSON.stringify(jsonParsed,null,2);
+        jsonPretty = JSON.stringify(buff,null,2);
         callback(null, jsonPretty);
       })
       .on('error', (error) => {
