@@ -24,8 +24,8 @@ app.delete('/posts/:postId/', routes.posts.deletePost(store));
 // COMMENTS ROUTES
 app.get('/posts/:postId/comments', routes.comments.get(store));
 app.post('/posts/:postId/comments', routes.comments.post(store));
-app.put('/posts/:postId/comments/commentId', routes.comments.put(store));
-app.delete('/posts/:postId/comments/commentId', routes.comments.deleteComment(store));
+app.put('/posts/:postId/comments/:commentId', routes.comments.put(store));
+app.delete('/posts/:postId/comments/:commentId', routes.comments.deleteComment(store));
 
 app.listen(3000);
 console.log('App listening on port 3000');
