@@ -25,11 +25,15 @@ const put = (store) => (req, res) => {
 
 // DELETE an existing post
 const deleteComment = (store) => (req, res) => {
-  const postId  = req.params.postId;
-  const commentId  = req.params.commentId;
-  store.posts[postId].comments.splice(commentId, 1);
-  console.log('New store: ', store.posts);
-  res.status(204).send();
+  try {
+    const postId  = req.params.postId;
+    const commentId  = req.params.commentId;
+    store.posts[postId].comments.splice(commentId, 1);
+    console.log('New store: ', store.posts);
+    res.status(204).send();
+  } catch (e) {
+    res.status(404).end(e.message)
+  }
 };
 
 module.exports = {
