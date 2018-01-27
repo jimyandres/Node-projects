@@ -1,4 +1,5 @@
 module.exports = {
     remoteUrl : '',
-    localUrl: 'mongodb://localhost/edx-course-db'
+    localUrl: 'mongodb://localhost',
+    name: 'edx-course-db'
 };
