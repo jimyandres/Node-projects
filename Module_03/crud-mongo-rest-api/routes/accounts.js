@@ -2,7 +2,7 @@
 const mongodb = require('mongodb');
 
 // get all accounts stored in db
-const get = (db) => (req, res) => {
+const get = (db) => (req, res, next) => {
   db.collection('accounts')
     .find({}, {sort: {_id: -1}})
     .toArray((error, accounts) => {
@@ -11,7 +11,7 @@ const get = (db) => (req, res) => {
     });
 };
 
-const post = (db) => (req, res) => {
+const post = (db) => (req, res, next) => {
   const newAccount = req.body;
   db.collection('accounts')
     .insert(newAccount, (error, results) => {
@@ -20,7 +20,7 @@ const post = (db) => (req, res) => {
     });
 };
 
-const put = (db) => (req, res) => {
+const put = (db) => (req, res, next) => {
   const accountId = req.params.id;
   db.collection('accounts')
     .update({_id : mongodb.ObjectID(accountId)},
@@ -31,7 +31,7 @@ const put = (db) => (req, res) => {
       });
 };
 
-const del = (db) => (req, res) => {
+const del = (db) => (req, res, next) => {
   const accountId = req.params.id;
   db.collection('accounts')
     .remove({_id: mongodb.ObjectID(accountId)}, (error, results) => {

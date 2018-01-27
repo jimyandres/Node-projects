@@ -25,6 +25,7 @@ mongodb.MongoClient.connect(url, (error, client) => {
   app.put('/accounts/:id', routes.accounts.put(db));
   app.delete('/accounts/:id', routes.accounts.del(db));
 
+  app.use(errorhandler());
 
   // listen (star app with node server.js) =====================================
   app.listen(3000);
