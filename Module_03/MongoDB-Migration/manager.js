@@ -32,9 +32,12 @@ const manager = (argv) => {
       return {...item, ...backup[item.id]};
     });
 
+    const startTime = Date.now();
     async.parallelLimit(funcs, customers.length, (error, results) => {
       if (error) return console.log(error.message);
+      const endTime = Date.now();
       console.log("Data stored in the collection customers");
+      console.log(`Execution time: ${endTime-startTime} ms.`);
     });
 
   client.close();
