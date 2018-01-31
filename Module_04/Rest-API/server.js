@@ -13,19 +13,19 @@ let url = database.remoteUrl? database.remoteUrl : database.localUrl;
 url += database.dbName;
 mongoose.connect(url);
 
-const db = mongoose.connecttion;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function callback () {
+app.once('open', function callback () {
   console.log("DB connected");
 });
 
 // log every request to the console
-db.use(logger('dev'));
+app.use(logger('dev'));
 // parse application/json
-db.use(bodyParser.json());
+app.use(bodyParser.json());
 
 // routes ======================================================================
-require('./routes')(app);
+require('./app/routes').accounts(app);
 
 // listen (star app with node server.js) =======================================
 app.listen(8080);
