@@ -1,4 +1,4 @@
-# Module 3 Assignment Lab: MongoDB Migration Node Script
+# MongoDB Migration Node Script
 
 *The assignment lab for this module is to build a migration script to move data from one MongoDB database to another.*
 
@@ -26,9 +26,9 @@ $ node manager.js <backup_data> <incomplete_data> <batch_number>
 
 The proposed implementation does not support to exchange the order of the data to merge (just like backup and then the incomplete data).
 
-## Issues and Security Vulnerabilities
+## Issues
 
-If you discover any bug, please send an e-mail to Jimy Andres via [jimyandres.ar@gmail.com](mailto:jimyandres.ar@gmail.com), or open a new Issue describing the process flow to replicate the problem.
+If you discover any bug, please open a new Issue describing the process flow to replicate the problem.
 
 ## License
 

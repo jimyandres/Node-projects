@@ -10,7 +10,7 @@ To run the script use the following command line:
 $ node server.js
 ```
 
-## ROUTES (ENDPOINTS) AVAILABLES
+## ROUTES (ENDPOINTS) AVAILABLE
 
 |ENDPOINTS  |METHOD  |FUNCTIONALITY |
 |---|:---:|---|
