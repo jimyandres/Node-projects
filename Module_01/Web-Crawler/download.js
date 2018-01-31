@@ -1,10 +1,17 @@
-const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const uuidv1 = require('uuid/v1');
 
 const downloadPage = (url = 'https://www.npmjs.com/') => {
   const fetchPage = (urlF, callback) => {
+
+    let http;
+    if (urlF.indexOf('https') > -1) {
+      http = require('https');
+    } else {
+      http = require('http');
+    }
+
     http.get(urlF, (response) => {
       let buff = '';
       response.on('data', (chunk) => {
