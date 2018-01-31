@@ -1,6 +1,6 @@
 # Node-projects
 
-This repo contains a series of developed projects, following [this Node.js course][1] from [edX][2].
+This repo contains a series of projects developed with Node.js, following [this Node.js course][1] from [edX][2].
 
 [1]: https://www.edx.org/course/introduction-node-js-microsoft-dev283x "Introduction to Node.js"
 
@@ -26,6 +26,13 @@ This repo contains a series of developed projects, following [this Node.js cours
 
 * [MongoDB Migration][8]: MongoDB Migration script.
 
+### Module 4: Working with Mongoose ODM
+
+* [Lesson 4][9]: This is an example for custom Static and Instance Methods with Mongoose.
+
+* [Relational Queries][10]: Project that uses relational queries between blog and comment objects using Mongoose.
+
+* [REST API][11]: Last version of the REST API server using mongoose.
 
 [3]: /Module_01/Web-Crawler
 
@@ -38,3 +45,17 @@ This repo contains a series of developed projects, following [this Node.js cours
 [7]: /Module_03/crud-mongo-rest-api
 
 [8]: /Module_03/MongoDB-Migration
+
+[9]: /Module_04/Lesson_04
+
+[10]: /Module_04/Relational_Queries
+
+[11]: /Module_04/Rest-API
+
+## Issues and Security Vulnerabilities
+
+If you discover any bug, please  open a new Issue describing the process flow to replicate the problem.
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
