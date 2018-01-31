@@ -2,7 +2,7 @@
   "name": "Web-Crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "download.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
