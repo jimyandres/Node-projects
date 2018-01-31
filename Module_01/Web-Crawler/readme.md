@@ -13,4 +13,4 @@ To run the script use the following:
 ```
 $ node download.js <URL>
 ```
-**Note:** if the ``URL`` argument is optional, the default URL is set to `https://www.npmjs.com/`
+**Note:** the ``URL`` argument is optional, the default URL is `https://www.npmjs.com/`
