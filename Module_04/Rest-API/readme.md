@@ -33,7 +33,7 @@ $ node server.js
 
 ## Issues and Security Vulnerabilities
 
-If you discover any bug, please send an e-mail to Jimy Andres via [jimyandres.ar@gmail.com](mailto:jimyandres.ar@gmail.com), or open a new Issue describing the process flow to replicate the problem.
+If you discover any bug, please  open a new Issue describing the process flow to replicate the problem.
 
 ## License
 
