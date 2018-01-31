@@ -58,4 +58,4 @@ If you discover any bug, please  open a new Issue describing the process flow to
 
 ## License
 
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This series of project are open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
