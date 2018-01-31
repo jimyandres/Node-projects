@@ -21,15 +21,15 @@ $ node server.js
 
 **Note:** Make sure to configure the `/config/database.js` file and the MongoDB starting on port `:27017`.
 
-## ROUTES (ENDPOINTS) AVAILABLES
+## ROUTES (ENDPOINTS) AVAILABLE
 
 |ENDPOINTS  |METHOD  |FUNCTIONALITY |
 |---|:---:|---|
 |`/accounts`| `GET`| Get all accounts|
 |`/accounts`| `POST`| Create an account|
-|`/accounts/:id`| `GET`| Get specific account|
-|`/accounts/:id`| `PUT`| Update a specific account|
-|`/accounts/:id`| `DELETE`| Delete a specific account|
+|`/accounts/id`| `GET`| Get specific account|
+|`/accounts/id`| `PUT`| Update a specific account|
+|`/accounts/id`| `DELETE`| Delete a specific account|
 
 ## Issues and Security Vulnerabilities
 

@@ -16,8 +16,8 @@ $ node server.js
 |---|:---:|---|
 |`/accounts`| `GET`| Get all accounts|
 |`/accounts`| `POST`| Create an account|
-|`/accounts/:id`| `PUT`| Update a specific account|
-|`/accounts/:id`| `DELETE`| Delete a specific account|
+|`/accounts/id`| `PUT`| Update a specific account|
+|`/accounts/id`| `DELETE`| Delete a specific account|
 
 ## Issues
 
