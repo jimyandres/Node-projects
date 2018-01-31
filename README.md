@@ -6,7 +6,7 @@ This repo contains a series of developed projects following [this Node.js course
 
 ### Module 1: Node Core Overview
 
-** [Web-Crawler][3]: ** Script that allows you to download the html of a given URL webpage.
+[Web-Crawler][3]: Script that allows you to download the html of a given URL webpage.
 
 
 
@@ -14,4 +14,4 @@ This repo contains a series of developed projects following [this Node.js course
 
 [2]: https://www.edx.org/
 
-[3]: (../tree/master/Module_01/Web-Crawler)
+[3]: /Module_01/Web-Crawler
