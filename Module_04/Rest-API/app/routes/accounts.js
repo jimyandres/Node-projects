@@ -30,6 +30,7 @@ const getAccount = (id, response) => {
 
 // update an account
 const updateAccount = (id, data, response) => {
+  console.log(id, data);
   Account.update({ _id: id }, { $set: data }, (err, result) => {
     sendResponse(err, result, response);
   });
@@ -37,7 +38,7 @@ const updateAccount = (id, data, response) => {
 
 // delete an account
 const deleteAccount = (id, response) => {
-  Account.delete({ _id: id }, (err, result) => {
+  Account.remove({ _id: id }, (err, result) => {
     sendResponse(err, result, response);
   });
 };
