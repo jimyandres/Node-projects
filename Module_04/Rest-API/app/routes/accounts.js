@@ -4,7 +4,7 @@ const Account = require('../models/Account');
 const sendResponse = (err, result, response) => {
   // if there is an error retrieving, send the error
   if (err) response.send(err);
-  response.json(res);
+  response.json(result);
 }
 
 // get all accounts from mongodb

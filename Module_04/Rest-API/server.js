@@ -28,5 +28,6 @@ app.use(bodyParser.json());
 require('./app/routes').accounts(app);
 
 // listen (star app with node server.js) =======================================
-app.listen(8080);
-console.log('App listening on port 8080');
+const port = 3000;
+app.listen(port);
+console.log(`App listening on port ${port}`);
